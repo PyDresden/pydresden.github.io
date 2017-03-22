@@ -1,0 +1,15 @@
+# Site Settings
+lang: 'en'
+author: 'PyDresden Community'
+title: 'PyDresden'
+subtitle: 'Python User Group in Dresden'
+description: ''
+keywords: ''
+
+# Site Content
+socials:
+- {name: rss, link: '/feed.xml'}
+
+menu:
+- {name: 'nachrichten'}
+- {name: 'community'}

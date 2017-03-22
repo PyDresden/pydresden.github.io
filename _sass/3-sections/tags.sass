@@ -1,0 +1,30 @@
+/*---------------------*/
+/* Style for tags list */
+/*---------------------*/         
+.tags
+   .header .title svg
+      fill: $color-alt
+      +size(30px)
+      +display(inline-block)  
+   
+   .body
+      margin: 0px 
+      list-style-type: none 
+      padding: .8rem 0px 0px
+
+      .no-tags
+         width: 100%
+
+      li
+         +display(block)
+         line-height: 1.7
+
+         svg
+            margin-right: 3px
+            +size(13px)
+            +display(inline-block)  
+
+@media screen and (min-width: 370px)
+   .tags .body li
+      +display(inline-block)
+      width: 49%

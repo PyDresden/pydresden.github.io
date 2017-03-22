@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='{{ site.data.settings.lang }}'>
+<head>
+   <title>{{site.data.settings.title}}</title>
+   <meta charset='utf-8'>
+   <meta name='description' content=''>
+   <meta name='keywords' content=''>
+   <meta name='author' content='{{site.data.settings.author}}'>
+   <meta name='dcterms.rightHolder' content='{{site.url}}'>
+   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+   <link rel='cannonical' href="{{site.url}}{{page.url | replace: 'index.html' , ''}}">
+   <link rel='stylesheet' href='{{site.baseurl}}/assets/css/main.css' type='text/css'>
+   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,700'>
+   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Quicksand:300,400'>
+   <link rel='shortcut icon' href='{{site.baseurl}}/favicon.ico'>   
+</head>
+<body id='main'>
+<header id='header'>
+   <div class='header-container'>
+      <section class='wrapper-flex'>
+         <figure class='badge'>
+            {% include icons/python-logo.html %}
+         </figure>
+         <section class='text'>
+            <a class='site-title' href='{{ site.url }}{{ site.baseurl }}'>
+                <h1>{{ site.data.settings.title }} </h1>
+            </a>
+            <span class='site-title'> <h2>{{ site.data.settings.subtitle }}</h2> </span>
+         </section>
+      </section>
+   </div>
+</header>

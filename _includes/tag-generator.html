@@ -1,0 +1,11 @@
+{% assign tags_list = site.tags %}
+{% for tag in tags_list %} 
+  {% if tag[0] == include.tag %}
+    <li>
+      {% include icons/tag.html %}
+      <a href="{{site.baseurl}}/tags/{{ tag[0] }}">{{ tag[0] | capitalize }} -
+        <span>{{ tag[1].size }} {% if tag[1].size > 1 %} {{ 'posts' }} {% else %} {{ 'post' }} {% endif %}</span>
+      </a>
+    </li>
+  {% endif %}
+{% endfor %}

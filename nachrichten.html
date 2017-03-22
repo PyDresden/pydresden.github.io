@@ -1,0 +1,46 @@
+---
+layout: default
+title: blog
+priority: 0.8
+---
+
+<section id='blog'>
+   <div class='container'>
+      <section class='wrapper tags'>
+         <header class='header'>
+            <h3 class='title'>{% include icons/tags.html %}Tags</h3>
+         </header>
+         <ul class='body'>
+         {% assign tags_list = site.tags %}  
+           {% if tags_list.first[0] == null %}
+               <li class='no-tags'>No tags available in this site</li>
+           {% else %}
+             {% for tag in tags_list %} 
+               <li>
+                  {% include icons/tag.html %}
+                  <a href="{{ site.baseurl}}/tags/{{ tag[0] }}">{{ tag[0] | capitalize }} -
+                     <span> {{ tag[1].size }} {% if tag[1].size > 1 %} {{ 'Posts' }} {% else %} {{ 'Post' }} {% endif %}</span>
+                  </a>
+               </li>
+             {% endfor %}
+           {% endif %}
+         </ul>
+      </section>
+      
+      <section class='wrapper articles'>
+         <header class='header'>
+            <h3 class='title'>Nachrichten</h3>
+         </header>
+         <section class='body'>
+            {% for post in site.posts %}
+            <a href='{{site.baseurl}}{{post.url}}'>
+               <article class='article'>
+                  <h4 class='title'>{{post.title}}</h4>
+                  <span class='date'>{{ post.date | date: '%b %-d, %Y' }}</span>
+               </article>
+            </a>
+            {% endfor %}         
+         </section>
+      </section>         
+   </div>
+</section>

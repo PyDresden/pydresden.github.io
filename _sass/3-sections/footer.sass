@@ -1,0 +1,71 @@
+/*------------------*/
+/* Style for footer */
+/*------------------*/
+#footer
+   .copyright
+      text-align: center
+      
+      p
+         @extend .smaller
+         color: $color-main
+         text-transform: uppercase
+         +display(inline-block)
+         
+         &:hover
+            border-bottom: 1px solid rgba($color-main, .5)
+         
+   .social
+      +display(flex)
+      +justify-content(center)
+      padding-bottom: .2rem
+
+      .social-item
+         +display(block)
+         +position(relative)
+         margin: 0px .6rem
+         +transition-duration(.2s)
+         +transition-timing-function(ease-out)
+
+         &:before
+            content: ''
+            +size(3px)
+            border-radius: 50%
+            background-color: $color-main
+            +position(absolute, 0px null null 0px)
+
+         &:after
+            content: ''
+            +size(3px)
+            border-radius: 50%
+            background-color: $color-main
+            +position(absolute, null 0px 0px null)
+         
+         &:hover
+            +transform(scale(1.1))
+          
+         .helper        
+            +size(32px)         
+            +display(block)
+            text-align: center
+            border-radius: 50%
+            background-color: $color-main
+            white-space: nowrap
+            border: 1px solid $border-color
+            
+            &:before
+               content: ''
+               height: 100%
+               +display(inline-block)
+               vertical-align: middle
+
+            svg
+               +size(16px)
+               +display(inline-block)
+               vertical-align: middle
+               margin: 0px 0px 0px -0.25rem
+               fill: $color-alt
+               +transition(all .1s ease-out 0s)
+                   
+@media screen and (max-width: 768px)
+   #footer .copyright p
+      margin-bottom: .4rem

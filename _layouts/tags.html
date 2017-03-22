@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+{% capture var %}{{ page.url | remove: 'tags' | remove: '/' | replace: '%20' , ' ' }}{% endcapture %}
+<section id='tags'>
+   <div class='container'>
+      <section class='wrapper tags tags-list'>
+         <header class='header'>
+            <h3 class='title'>Posts Tagged “{{ var }}”</h3>
+         </header>
+         <section class='body'>
+           {% for post in site.posts %}
+           {% for tag in post.tags %}
+           {% if tag == var %}
+            <a href='{{site.baseurl}}{{post.url}}'>
+               <article class='article'>
+                  <h4 class='title'>{{post.title}}</h4>
+                  <span class='date'>{{ post.date | date: '%b %-d, %Y' }}</span>
+               </article>
+            </a>
+           {% endif %}
+           {% endfor %}
+           {% endfor %}        
+         </section>
+      </section>    
+   </div>
+</section>

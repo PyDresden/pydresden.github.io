@@ -1,0 +1,15 @@
+<footer id='footer'>
+   <section class='social'>            
+      {% for social in site.data.settings.socials %}
+      <a class='social-item' href='{{social.link}}' target='_blank'><span class='helper'>{% include icons/{{social.name}}.html %}</span></a>
+      {% endfor %}
+   </section>
+   <section class='container copyright'>
+      <a href='{{ site.url }}{{ site.baseurl }}'><p>{{ site.data.settings.author }} © 2017</p></a>
+   </section>
+</footer>
+
+<script src='{{site.baseurl}}/assets/js/jquery-3.1.1.min.js'></script>
+<script src='{{site.baseurl}}/assets/js/functions.js'></script>
+</body>   
+</html>

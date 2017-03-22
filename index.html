@@ -1,0 +1,54 @@
+---
+layout: default
+priority: 0.8
+---
+
+<section id='welcome'>
+   <div class='container'>
+      <section class='wrapper'>
+         <header class='header'>
+            <h3 class='title'>Willkommen!</h3>
+         </header>
+         <section class='body'>
+            <p> @Frank: dein Text kommt hier </p>
+         </section>
+      </section>
+   </div>
+</section>
+
+
+<!--
+<section id='articles'>   
+   <div class='container'>
+      <section class='wrapper articles'>
+         <header class='header'>
+            <h3 class='title'>Posts</h3>
+         </header>
+         <section class='body'>
+            {% for post in paginator.posts %}
+            <a href='{{site.baseurl}}{{post.url}}'>
+               <article class='article'>
+                  <h4 class='title'>{{post.title}}</h4>
+                  <span class='date'>{{ post.date | date: "%-d %B, %Y" }}</span>
+               </article>
+            </a>
+            {% endfor %}
+
+            <div class="pagination-flex">
+              {% if paginator.previous_page %}
+                <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="previous">&larr; Previous</a>
+              {% else %}
+                <span class="previous">&larr; Previous</span>
+              {% endif %}
+              <span class="page_number">{{ paginator.page }} / {{ paginator.total_pages }}</span>
+              {% if paginator.next_page %}
+                <a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="next">Next &rarr;</a>
+              {% else %}
+                <span class="next ">Next &rarr;</span>
+              {% endif %}
+            </div>
+         </section>
+      </section>   
+   </div>
+</section>
+-->

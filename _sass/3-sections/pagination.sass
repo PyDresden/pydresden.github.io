@@ -1,0 +1,30 @@
+/*------------------------------*/
+/* Style for pagination section */
+/*------------------------------*/
+.pagination-flex
+   margin-top: 1.25rem
+   border: 1px solid $border-color
+   border-radius: 3px
+   padding: 5px 8px
+   text-align: center
+
+   .previous
+      float: left
+      
+   .next
+      padding-left: 29px
+      float: right
+      
+   span.previous, span.next
+      color: $border-color
+      
+   a.previous, a.next
+      &:hover
+         color: $text-color-alt
+      
+   .page_number
+      font-size: .9rem
+      
+   &:hover
+      background-color: lighten($border-color-alt, 26)
+      border-color: darken($border-color, 10)  

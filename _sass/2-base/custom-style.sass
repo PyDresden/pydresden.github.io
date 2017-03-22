@@ -1,0 +1,130 @@
+// html
+// --body#main
+// ----header
+// ----main#site-main
+// ------section#name
+// --------.container
+// ----------.wrapper
+// ------------.header
+// ------------.body
+// ----footer
+
+/*---------------------*/
+/* Style for main body */
+/*---------------------*/
+#main
+   background:
+      image: url('../img/bg.jpg')
+      size: cover
+
+/*---------------------------*/
+/* Style for class site-main */
+/*---------------------------*/
+#site-main
+   overflow: hidden
+   z-index: 1
+   +position(relative)
+   +display(flex)
+   +flex-direction(column)
+      
+   > *      
+      overflow: hidden
+
+/*---------------------------*/
+/* Style for class container */
+/*---------------------------*/
+.container
+   +position(relative)
+   overflow: hidden
+   padding: 0px .6rem
+   margin-left: auto
+   margin-right: auto     
+   
+   @media screen and (min-width: 768px)
+      padding: 0px 1.25rem
+      max-width: 750px
+
+   @media screen and (min-width: 992px)
+      max-width: 980px   
+
+/*-------------------------*/
+/* Style for class wrapper */
+/*-------------------------*/
+.wrapper
+   margin-bottom: .6rem
+   border-radius: 3px
+   padding: 1rem
+   background-color: $color-main
+   border: 1px solid $border-color
+
+   
+   @media screen and (min-width: 768px)
+      margin-bottom: 1.24rem
+      padding: 1.3rem
+   
+   .header
+      color: $text-color-alt
+      padding-bottom: .7rem
+      border-bottom: 1px solid $color-alt
+      +display(block)
+         
+      @media screen and (min-width: 550px)         
+         +display(flex)
+         +justify-content(space-between)
+         +align-items(center)
+            
+      > *
+         +display(block)
+
+      .title
+         color: $text-color
+         margin: 0px
+               
+      .date
+         min-width: 100px
+         +display(inline-block)
+         margin-top: .5rem      
+            
+      .brand
+         margin: .5rem 0px 0px
+         
+         svg
+            min-width: 110px
+            +size(auto 100%)
+            fill: $brand-color 
+            +transition-duration(.2s)
+            
+            &:hover
+               fill: darken($brand-color, 15) 
+      
+         @media screen and (min-width: 550px)
+            margin: 0px
+
+   .body
+      padding: .8rem 0px 0px   
+         
+      p
+         line-height: 1.6
+      
+      .article
+         +display(block)
+         +position(relative)
+         border-bottom: 1px solid $border-color
+         padding: .8rem 0px
+
+         .title
+            margin: 0px
+
+         .date
+            +align-self(flex-start)
+            font-size: 0.875rem
+            color: darken($border-color, 10)
+
+         &:hover
+            border-color: rgba($color-alt, .5)   
+
+      @media screen and (min-width: 500px)
+         .article
+            +display(flex)
+            +justify-content(space-between)
+            +align-items(center)

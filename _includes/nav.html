@@ -1,0 +1,10 @@
+<section id='nav'>
+   <div class='nav-container'>
+      <nav class='nav-flex'>
+         <a class='nav-item home' href='{{ site.url }}{{ site.baseurl }}'>{% include icons/home.html %}</a>
+         {% for menu in site.data.settings.menu %}
+         <a class='nav-item blog {% if page.url contains menu.name %}current{% endif %}' href='{{site.baseurl}}/{{ menu.name }}'>{{ menu.name }}</a>
+         {% endfor %}
+      </nav>
+   </div>
+</section>
