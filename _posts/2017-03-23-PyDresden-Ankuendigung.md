@@ -1,15 +1,11 @@
 ---
 layout: post
-title:  "Erstes Treffen"
+title:  "PyDresden Ankündigung"
 published: true
 tags: 
  - treffen
 priority: 0.8
 ---
-
-# PyDresden Ankündigung
-
-
 Die Programmiersprache Python findet sich oft unter den Top 5 in diversen Beliebtheitsrankings. Gerade die
 freundliche und hilfsbereite Community wird von vielen geschätzt und versammelt sich lokal in Python User Groups,
 leider noch nicht in Dresden.
