@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "Erstes Treffen"
+published: true
+tags: 
+ - treffen
+priority: 0.8
+---
+
+# PyDresden Ankündigung
+
+
+Die Programmiersprache Python findet sich oft unter den Top 5 in diversen Beliebtheitsrankings. Gerade die
+freundliche und hilfsbereite Community wird von vielen geschätzt und versammelt sich lokal in Python User Groups,
+leider noch nicht in Dresden.
+
+Zeit also die Pythonistas der sächsischen Landeshauptstadt und Umgebung an einen Tisch zu bringen [0].
+
+Wir treffen uns erstmalig am 18. April um 19 Uhr im HQ des [Chaos Computer Club Dresden](https://c3d2.de),
+Zentralwerk, Riesaer Straße 32, 01127 Dresden.
+
+Als Rahmenprogramm gibt es den Vortrag “Better type Python - Statische Typprüfung”, der sich um Typeklarationen und
+deren Anwendung dreht.
+
+Wir freuen uns auf ein nettes Treffen und spannende Diskussionen.
