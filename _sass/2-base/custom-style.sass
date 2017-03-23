@@ -17,6 +17,11 @@
       image: url('../img/bg.jpg')
       size: cover
 
+   &:before
+      content: ''
+      +position(fixed, 0px 0px 0px 0px)
+      +background(linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 50%, #37474F)) // gradient color you see in the bottom of website      
+
 /*---------------------------*/
 /* Style for class site-main */
 /*---------------------------*/
@@ -65,7 +70,7 @@
    .header
       color: $text-color-alt
       padding-bottom: .7rem
-      border-bottom: 1px solid $color-alt
+      border-bottom: 1px solid $border-color
       +display(block)
          
       @media screen and (min-width: 550px)         
