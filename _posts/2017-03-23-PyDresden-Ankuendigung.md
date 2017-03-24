@@ -19,7 +19,7 @@ deren Anwendung dreht.
 
     >>> {
     ... 'Wo': 'ZENTRALWERK',
-    ... 'Addresse': 'Riesaer Straße 32, 01127 Dresden',
+    ... 'Adresse': 'Riesaer Straße 32, 01127 Dresden',
     ... 'Thema': 'Better type Python - Statische Typprüfung'
     ... }
 
