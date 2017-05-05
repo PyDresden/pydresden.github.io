@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Zweites Treffen"
+title:  "Lightning talks"
 published: true
 tags: 
  - treffen
@@ -10,7 +10,8 @@ Hallo Pythonistas!
 
 Nach der Erfolg das erstes Treffen, es ist schon zeit um die Zweite zu organizieren!
 
-Als gesprochen, das Ziel ist uns ein bischen besser kennen zu lernen, Erwartungen und Ideen zu tauschen.
+Habt ihr spaß auf eine Lightning-Talks Runde? Das Ziel ist uns ein bischen besser kennen zu lernen,
+Erwartungen und Ideen zu tauschen.
 
 Wir haben auch eine Mailingsliste vorbereitet, bitte meld ihr
 [hier](http://lists.python-verband.org/mailman/listinfo/dresden) an!
