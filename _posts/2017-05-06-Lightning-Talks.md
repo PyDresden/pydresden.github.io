@@ -20,7 +20,7 @@ Wir haben auch eine Mailingsliste vorbereitet, bitte meld ihr
     ... 'Wann': '17. Mai',
     ... 'Wo': 'ZENTRALWERK',
     ... 'Adresse': 'Riesaer Straße 32, 01127 Dresden',
-    ... 'Thema': 'Better type Python - Statische Typprüfung'
+    ... 'Thema': 'Lightning talks'
     ... }
 
 Wir freuen uns auf ein nettes Treffen und spannende Diskussionen.
