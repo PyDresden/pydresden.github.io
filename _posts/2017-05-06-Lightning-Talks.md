@@ -17,7 +17,7 @@ Wir haben auch eine Mailingsliste vorbereitet, bitte meld ihr
 [hier](http://lists.python-verband.org/mailman/listinfo/dresden) an!
 
     >>> {
-    ... 'Wann': '17. Mai',
+    ... 'Wann': '17. Mai um 19:00',
     ... 'Wo': 'ZENTRALWERK',
     ... 'Adresse': 'Riesaer Straße 32, 01127 Dresden',
     ... 'Thema': 'Lightning talks'
