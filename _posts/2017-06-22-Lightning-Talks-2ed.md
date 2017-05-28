@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Lightning talks, 2nd Edition am 22. Juni"
+title:  "Lightning talks, 2nd Edition"
 published: true
 tags: 
  - treffen
