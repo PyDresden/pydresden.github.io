@@ -12,4 +12,5 @@ socials:
 
 menu:
 - {name: 'nachrichten'}
+- {name: 'termine'}
 - {name: 'kontakt'}
