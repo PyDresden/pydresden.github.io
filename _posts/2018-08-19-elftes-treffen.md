@@ -17,7 +17,7 @@ Die Python User Group lädt herzlich zum 11. Dresdner Meetup rund um die Program
 >
 > Die Guidelines auf GitHub sind auf englisch, ich werde aber auf deutsch sprechen.
 >
-> Ich würde mich über Feedback freuen: https://github.com/guettli/programming-guidelines/blob/master/README.rst
+> Ich würde mich über Feedback freuen: <https://github.com/guettli/programming-guidelines/>
 
     >>> {
     ... 'Wann': '10. September 2018 um 19:00',
